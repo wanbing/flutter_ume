@@ -14,14 +14,14 @@ class DetailPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('Detail Page'),
-            TextButton(
+            MaterialButton(
                 onPressed: () {
                   showDialog(
                       context: context,
                       builder: (ctx) => AlertDialog(
                             title: const Text('Dialog'),
                             actions: <Widget>[
-                              TextButton(
+                              MaterialButton(
                                   onPressed: () => Navigator.pop(context),
                                   child: const Text('OK'))
                             ],

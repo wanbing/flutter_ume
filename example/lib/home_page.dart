@@ -20,24 +20,24 @@ class _HomePageState extends State<HomePage> {
             child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            TextButton(
+            MaterialButton(
                 onPressed: () {
                   debugPrint('statement');
                 },
                 child: const Text('debugPrint')),
-            TextButton(
+            MaterialButton(
                 onPressed: () {
                   Navigator.of(context).pushNamed('detail');
                 },
                 child: const Text('Push Detail Page')),
-            TextButton(
+            MaterialButton(
                 onPressed: () {
                   showDialog(
                       context: context,
                       builder: (ctx) => AlertDialog(
                             title: const Text('Dialog'),
                             actions: <Widget>[
-                              TextButton(
+                              MaterialButton(
                                   onPressed: () => Navigator.pop(context),
                                   child: const Text('OK'))
                             ],
